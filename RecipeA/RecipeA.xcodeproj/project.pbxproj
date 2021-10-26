@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		E187813D27259122003010E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E187813C27259122003010E0 /* Preview Assets.xcassets */; };
 		E187814827259123003010E0 /* RecipeATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E187814727259123003010E0 /* RecipeATests.swift */; };
 		E187815327259123003010E0 /* RecipeAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E187815227259123003010E0 /* RecipeAUITests.swift */; };
+		E190A6502727FAB200B3E6C2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190A64F2727FAB200B3E6C2 /* Recipe.swift */; };
+		E190A6522727FB2800B3E6C2 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190A6512727FB2800B3E6C2 /* Recipes.swift */; };
+		E1DE73A72727F14000FBFE82 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DE73A62727F14000FBFE82 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		E187815227259123003010E0 /* RecipeAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAUITests.swift; sourceTree = "<group>"; };
 		E187815427259123003010E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E187816127259836003010E0 /* ChameleonFramework.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ChameleonFramework.podspec; path = Carthage/Checkouts/Chameleon/ChameleonFramework.podspec; sourceTree = "<group>"; };
+		E190A64F2727FAB200B3E6C2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E190A6512727FB2800B3E6C2 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		E1DE73A62727F14000FBFE82 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FA565843E5F22A1C3138AF3C /* Pods_RecipeATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +104,6 @@
 				30393FEA4DC973C416AD33AB /* Pods-RecipeATests.debug.xcconfig */,
 				C069CB3F724F42B744B681EF /* Pods-RecipeATests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,9 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				E187813427259120003010E0 /* RecipeA */,
+				E1DE73A52727F10800FBFE82 /* Network */,
+				E190A64E2727FA9700B3E6C2 /* Models */,
+				E187813327259120003010E0 /* Products */,
 				E187814627259123003010E0 /* RecipeATests */,
 				E187815127259123003010E0 /* RecipeAUITests */,
-				E187813327259120003010E0 /* Products */,
 				E187816027259835003010E0 /* Frameworks */,
 				DE1B2DD30F3C2F2DD59ADCE3 /* Pods */,
 			);
@@ -171,6 +178,23 @@
 				FA565843E5F22A1C3138AF3C /* Pods_RecipeATests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E190A64E2727FA9700B3E6C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E190A64F2727FAB200B3E6C2 /* Recipe.swift */,
+				E190A6512727FB2800B3E6C2 /* Recipes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1DE73A52727F10800FBFE82 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E1DE73A62727F14000FBFE82 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +434,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E190A6522727FB2800B3E6C2 /* Recipes.swift in Sources */,
 				E187813827259120003010E0 /* ContentView.swift in Sources */,
 				E187813627259120003010E0 /* RecipeAApp.swift in Sources */,
+				E1DE73A72727F14000FBFE82 /* Network.swift in Sources */,
+				E190A6502727FAB200B3E6C2 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
